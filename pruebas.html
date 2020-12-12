@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>calculadora de prueba</title>
+    </head>
+    <body style="text-align: center;">
+        <h1>Ingrese dos numeros</h1>
+        <label for="">Numero 1:</label>
+        <input type="text" id="numero1">
+        <br><br>
+        <label for="">Numero 2:</label>
+        <input type="text" id="numero2">
+        <br><br>
+        <h1>Presione la operación</h1>
+        <br><br>
+        <input type="button" onclick="Sumar();" value="SUMAR">
+        <br><br>
+        <input type="button" onclick="Restar();" value="RESTAR">
+        <br><br>
+        <input type="button" onclick="Multiplicar();" value="MULTIPLICAR">
+        <br><br>
+        <input type="button" onclick="Dividir();" value="DIVIDIR">
+    </body>
+
+    <script>
+        function Sumar() {
+            var n1 = document.getElementById('numero1').value;
+            var n2 = document.getElementById('numero2').value;
+            var suma = parseInt(n1) + parseInt(n2);
+            alert("La suma es: "+suma)
+        }
+        function Restar() {
+            var n1 = document.getElementById('numero1').value;
+            var n2 = document.getElementById('numero2').value;
+            var resta = parseInt(n1) - parseInt(n2);
+            alert("La resta es: "+resta)
+        }
+        function Multiplicar() {
+            var n1 = document.getElementById('numero1').value;
+            var n2 = document.getElementById('numero2').value;
+            var mult = parseInt(n1) * parseInt(n2);
+            alert("La multiplicacion es: "+mult)
+        }
+        function Dividir() {
+            var n1 = document.getElementById('numero1').value;
+            var n2 = document.getElementById('numero2').value;
+            var div = parseInt(n1) / parseInt(n2);
+            alert("La division es: "+div)
+        }  
+    </script>
+</html>
